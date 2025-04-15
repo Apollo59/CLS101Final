@@ -1,0 +1,56 @@
+
+<html>
+    <style>
+        .list {
+            text-align: left;
+            color: white;
+            padding: 0px 25px;
+       }
+       ol { padding-left: 50px; }
+li { 
+  padding-left: 16px;
+  margin-top: 24px;
+  position: relative;
+  font-size: 16px;
+  line-height: 20px;
+  
+  &:before {
+    content: '';
+    display: block;
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    position: absolute; 
+    top: -12px;
+    left: -33px;
+  }
+}
+        body {
+            background-color: 1f1f1f;
+        }
+        ol.training { 
+  li:nth-child(odd):before { border-color: #0BAD02; }
+  li:nth-child(even):before { border-color: #2378D5; }
+}
+    </style>
+<div class="list">
+<p class="trainTitle">
+    <strong>Training Necessary</strong>
+</p>
+<ol class="training">
+    <li> Get Degree </li>
+    <li> Get Job Experiance </li>
+    <li> ??? </li>
+    <li> Profit </li>
+</ol>
+<p>
+    <strong>Skills in the Workplace</strong>
+</p>
+<ul>
+    <li>Problem Solving</li>
+    <li>Teamwork</li>
+    <li>Adaptability</li>
+</ul>
+</div>
+</html>
